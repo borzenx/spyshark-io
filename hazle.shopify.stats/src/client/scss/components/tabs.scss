@@ -1,0 +1,26 @@
+.nav-tabs{
+    margin: $half-padding;
+    border-bottom: 1px solid var(--neutral-300);
+
+    .nav-item{
+        
+        .nav-link{
+
+            outline: none;
+            background-color: var(--transparent);
+            border: none;
+
+            &.active{
+                border-bottom: 1px solid var(--primary-500);
+                background-color: var(--transparent);
+                color: var(--primary-500);
+            }
+        }
+    }
+}
+
+.tab-content{
+    .nav-tabs{
+        margin: 0px !important;
+    }
+}

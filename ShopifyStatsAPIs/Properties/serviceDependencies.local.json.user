@@ -1,0 +1,44 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2023-05-24T20:37:46.9197868Z"
+    },
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2023-05-24T18:38:06.8865161Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "0218441b-162d-422f-9a50-b31c47288996"
+    },
+    "secrets1.resourceGroupName": {
+      "Name": "secrets1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "ShopifyStatsAPIs20230522224127ResourceGroup"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "ShopifyStatsAPIs20230522224127ResourceGroup"
+    },
+    "subscriptionId": {
+      "Name": "subscriptionId",
+      "Type": "subscription",
+      "Value": "0218441b-162d-422f-9a50-b31c47288996"
+    },
+    "secrets1.resourceGroupLocation": {
+      "Name": "secrets1.resourceGroupLocation",
+      "Type": "location",
+      "Value": "eastus"
+    },
+    "secrets1.subscriptionId": {
+      "Name": "secrets1.subscriptionId",
+      "Type": "subscription",
+      "Value": "0218441b-162d-422f-9a50-b31c47288996"
+    }
+  }
+}

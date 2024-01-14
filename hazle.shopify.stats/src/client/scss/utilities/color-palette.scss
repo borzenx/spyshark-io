@@ -1,0 +1,66 @@
+body{
+
+    //Primary colors
+    --primary-900: #1c1d36;
+    --primary-700: #184cdc;
+    --primary-500: #2864fc;
+    --primary-300: #8BBEFA;
+    --primary-100: #e8edfb;
+
+    &:not(.dark-theme){
+
+        //Neutral colors
+        --neutral-900: #000000;
+        --neutral-700: #444444;
+        --neutral-500: #7b7b8a;
+        --neutral-300: #dddddd;
+        --neutral-200: #f9fafb;
+        --neutral-100: #ffffff;
+
+        //Aditional colors:
+        --transparent: transparent;
+
+        //Background colors
+        .bg-color-primary-500, .bg-primary{
+            background-color: var(--primary-500) !important;
+        }
+
+        .bg-color-transparent{
+            background-color: transparent;
+        }
+
+        //Text colors
+        .color-neutral-100{
+            color: var(--neutral-100);
+        }
+    }
+
+    &.dark-theme{
+
+        //Neutral colors
+        --neutral-900: #ffffff;
+        --neutral-700: #595959;
+        --neutral-500: rgb(169, 169, 169);
+        --neutral-300: #898989;
+        --neutral-200: #121212;
+        --neutral-100: #0F0F0F;
+
+        //Aditional colors:
+        --transparent: transparent;
+
+        //Background colors
+        .bg-color-primary-500, .bg-primary{
+            background-color: var(--primary-500) !important;
+            color: var(--neutral-900) !important;
+        }
+
+        .bg-color-transparent{
+            background-color: transparent;
+        }
+
+        //Text colors
+        .color-neutral-100{
+            color: var(--neutral-900);
+        }
+    }
+}

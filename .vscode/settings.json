@@ -1,0 +1,15 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/0218441b-162d-422f-9a50-b31c47288996/resourceGroups/ShopifyStatsAPIs20230522224127ResourceGroup/providers/Microsoft.Web/sites/spyshark-io",
+    "appService.deploySubpath": "hazle.shopify.stats",
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "editor.formatOnPaste": false, // required 
+    "editor.formatOnType": false, // required
+    "editor.formatOnSave": true, // optional 
+    "editor.formatOnSaveMode": "file", // required to format on save
+    "files.autoSave": "onFocusChange", // optional but recommended
+    "vs-code-prettier-eslint.prettierLast": "false" // set as "true" to run 'prettier' last not first
+}

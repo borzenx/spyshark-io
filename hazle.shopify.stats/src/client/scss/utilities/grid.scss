@@ -1,0 +1,85 @@
+.app{
+    display: flex;
+    box-sizing: border-box;
+}
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neutral-200);
+    box-sizing: border-box;
+    padding: 0px;
+    width: calc(100vw - 200px);
+}
+.grid-item{
+    padding: $half-padding;
+    height: 100%;
+    animation: jumpFadeIn 0.5s ease-out;
+}
+
+@keyframes jumpFadeIn {
+    0% {
+      transform: translateY(20%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+main{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 100%;
+    height: calc(100vh - 70px);
+    padding: 7.5px 100px;
+}
+
+.row{
+    margin: 0px;
+    box-sizing: border-box;
+}
+.col,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.col,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12:has(.row){
+
+    .row{
+        height: 100%;
+
+        .grid-item{
+            height: 100%;
+
+            .card{
+                height: 100%;
+            }
+        }
+    }
+}
+.store-logo{
+    justify-content: center;
+}
+
+@media (max-width: $desktop-breakpoint) {
+    main{
+        padding: 7.5px 30px;
+    }
+}
+
+@media (max-width: $tablet-breakpoint) {
+    main{
+        padding: 7.5px 15px;
+    }
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .container-fluid{
+        width: calc(100vw - 70px);
+    }
+    main{
+        padding: $half-padding
+    }
+}

@@ -1,0 +1,147 @@
+.content-container{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 0 15px;
+    flex-direction: column;
+    justify-content: center;
+
+    .sign-in{
+        background-color: var(--primary-500);
+        color: var(--neutral-100);
+        border: none;border-radius: $radius;
+        padding: $half-padding $padding;
+    }
+
+}
+.hero-banner{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &:after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://t4.ftcdn.net/jpg/02/63/38/15/360_F_263381557_RVtcOKVmtKLmaVu1qRhYMp7DiSQt1JvJ.jpg');
+        background-position: center center;
+        background-size: 300px;
+        mix-blend-mode: overlay;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        filter: invert(100%) sepia(9%) saturate(0%) hue-rotate(3deg) brightness(100%) contrast(100%);
+    }
+
+    video{
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    &.size-xl{
+        height: 100lvh;
+
+        @media (max-width: 768px){
+            height: auto;
+            padding: 30px 0;
+            padding-top: 100px;
+        }
+    }
+
+    &.size-md{
+        height: 80lvh;
+
+        @media (max-width: 768px){
+            height: auto;
+            padding: 30px 0;
+            padding-top: 100px;
+        }
+    }
+
+    &.size-xs{
+        height: 50lvh;
+
+        @media (max-width: 768px){
+            height: auto;
+            padding: 30px 0;
+            padding-top: 100px;
+        }
+    }
+
+    &.size-auto{
+        height: auto;
+        padding: 30px 0;
+        padding-top: 100px;
+    }
+
+    .content-container{
+        height: 100%;
+        z-index: 1;
+        position: relative;
+
+        &.proportion{
+            &-half{
+                img{
+                    width: 50%;
+                }
+                .animation{
+                    width: 50%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            &-one-third{
+                img{
+                    width: 33%;
+                }
+
+                .animation{
+                    width: 33%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            &-quarter{
+                img{
+                    width: 25%;
+                }
+
+                .animation{
+                    width: 25%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            &-half,&-one-third,&-quarter{
+                @media (max-width: 768px){
+                    img{
+                        width: 100%;
+                    }
+
+                    .animation{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

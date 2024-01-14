@@ -1,0 +1,14 @@
+.breadcrumb{
+    background-color: var(--transparent);
+    margin-bottom: 0px;
+    padding: 0px;
+    a{
+        text-decoration: none;
+    }
+    i{
+        line-height: 25px;
+        font-size: 0.8rem;
+        padding: 0 $half-padding 0 $half-padding;
+        color: var(--neutral-500);
+    }
+}

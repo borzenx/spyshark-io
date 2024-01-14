@@ -1,0 +1,25 @@
+//Utilities
+@import 'utilities/variables.scss';
+@import 'utilities/breakpoints.scss';
+@import 'utilities/color-palette.scss';
+@import 'utilities/typography.scss';
+@import 'utilities/spacings.scss';
+@import 'utilities/grid.scss';
+@import 'utilities/global.scss';
+
+//Global imports
+@import 'utilities/toastify.scss';
+
+//Components
+@import 'components/placeholder.scss';
+@import 'components/sidebar.scss';
+@import 'components/header.scss';
+@import 'components/card.scss';
+@import 'components/tables.scss';
+@import 'components/tabs.scss';
+@import 'components/breadcrumb.scss';
+@import 'components/forms.scss';
+@import 'components/progressbar.scss';
+@import 'components/loading.scss';
+@import 'components/swiper.scss';
+@import 'components/hero-banner.scss';

@@ -1,0 +1,18 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/hazle.shopify.stats/node_modules
+/hazle.shopify.stats/.cache
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env
+npm-debug.log
+.vs
+/hazle.shopify.stats/.vs

@@ -1,0 +1,190 @@
+table{
+    width: 100%;
+
+    &#my-stores-table{
+
+        tbody{
+            overflow: scroll ;
+            display: flex;
+            flex-direction: column;
+            gap: $padding;
+            tr{
+                display: flex;
+                padding: $padding;
+                border-radius: $radius;
+                border: none;
+                box-shadow: 0px 0px 5px var(--primary-100);
+                background-color: var(--neutral-100);
+                td{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                
+                    &.logo{
+                        img{
+                            width: 100px;
+                        }
+                    }
+                    &.action{
+                        gap: 20px;
+                        
+                        a{
+                            font-size: 1.3rem;
+                            background-color: var(--primary-100);
+                            padding: $half-padding;
+                            border-radius: $radius;
+                            width: 50px;
+                            height: auto;
+                            aspect-ratio: 1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-decoration: none;
+
+                            i{
+                                color: var(--primary-500);
+                            }
+                        }
+                        button{
+                            background-color: var(--neutral-300);
+                            padding: $half-padding;
+                            border-radius: $radius;
+                            border: none;
+                            width: 50px;
+                            height: auto;
+                            aspect-ratio: 1;
+
+                            i{
+                                font-size: 1.3rem;
+                            }
+                        }
+                        >*:first-child{
+                            margin-right: $padding
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &#top-country-traffic{
+        tr{
+            td{
+                padding: $half-padding;
+                border-bottom: 2px solid var(--neutral-200);
+                width: 0px;
+                img{
+                    border-radius: 100%;
+                    aspect-ratio: 1;
+                    object-fit: cover;
+                    width: 40px;
+                }
+            }
+           #country-icon{
+            width: 10%;
+           }
+        }
+    }
+    &#traffic-source ,&.top-stores-table{
+        tr{
+            td{
+                padding: $half-padding;
+                border-bottom: 2px solid var(--neutral-200);
+                width: 0px;
+                img{
+                    aspect-ratio: 1;
+                    object-fit: contain;
+                    width: 30px;
+
+                }
+            }
+           #traffic-icon{
+            width: 10%;
+           }
+        }
+    }
+    &#tiktok-table{
+        gap: $padding;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+            tbody{
+                display: flex;
+                flex-direction: column;
+                gap: $padding;
+                overflow: hidden;
+            }
+        tr{
+            display: flex;
+         
+            border-radius: $radius;
+            border: none;
+            box-shadow: 0px 0px 5px var(--primary-100);
+            background-color: var(--neutral-100);
+            overflow: scroll;
+
+            th{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+            }
+
+            td{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+
+                .progress{
+                    position: relative;
+                    height: auto;
+                    margin: 4px;
+                    float: left;
+                    display: flex;
+                    text-align: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: var(--transparent);
+
+                    span{
+                        color: var(--primary-500);
+                        font-weight: 500;
+                        font-size: 1em;
+                    }
+                    .barOverflow{ 
+                        position: relative;
+                        overflow: hidden;
+                        width: 90px; height: 45px;
+                        margin-bottom: -20px;
+
+                        .bar{
+                            position: absolute;
+                            top: 0; left: 0;
+                            width: 90px; height: 90px;
+                            border-radius: 50%;
+                            box-sizing: border-box;
+                            border: 5px solid var(--primary-500);
+                            border-bottom-color: var(--neutral-300)  ;
+                            border-right-color: var(--neutral-300)  ;
+                          }
+                      }
+                  }
+            }
+
+
+           #poster{
+            min-width: 200px;
+            img{
+                width: 100%;
+                aspect-ratio: 4 / 3;
+                object-fit: cover;
+                border-radius: $radius;
+                box-shadow: 0px 0px 5px var(--primary-100);
+            }
+           }
+        }
+    }
+}
